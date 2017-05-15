@@ -13,12 +13,10 @@ tracks = data["result"]["tracks"]
 for track in tracks:
 	trackName = track["name"]
 	artist = track["artists"][0]["name"]
+	if artist == 'Taylor Swift':
+		continue
 	output += trackName + ' - ' + artist + '\n'
 playlistName = data["result"]["name"]
+
 with open(playlistName + '.txt', 'w') as file:
 	file.write(output.encode('utf8'))
-
-
-
-
-
