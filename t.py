@@ -13,8 +13,6 @@ tracks = data["result"]["tracks"]
 for track in tracks:
 	trackName = track["name"]
 	artist = track["artists"][0]["name"]
-	if artist == 'Taylor Swift':
-		continue
 	output += trackName + ' - ' + artist + '\n'
 playlistName = data["result"]["name"]
 
