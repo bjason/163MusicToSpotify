@@ -1,11 +1,25 @@
-import urllib, json
+import json
+import sys
+
+if sys.version_info[0] == 3:
+    from urllib.request import urlopen
+else:
+    # Not Python 3 - today, it is most likely to be Python 2
+    # But note that this might need an update when Python 4
+    # might be around one day
+    from urllib import urlopen
 
 #change the playlistId variable 
 playlistId = 21329331
-url = "http://music.163.com/api/playlist/detail?id="\
+urladd = "http://music.163.com/api/playlist/detail?id="\
 	+ str(playlistId) + "&updateTime=-1"
-response = urllib.urlopen(url)
-data = json.loads(response.read())
+# Your code where you can use urlopen
+if sys.version_info[0] == 3:
+	with urlopen(urladd) as url:
+		response = url.read()
+else:
+	response = urlopen(urladd).read()
+data = json.loads(response)
 
 output = ""
 
