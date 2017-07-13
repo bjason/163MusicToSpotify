@@ -30,5 +30,9 @@ for track in tracks:
 	output += trackName + ' - ' + artist + '\n'
 playlistName = data["result"]["name"]
 
-with open(playlistName + '.txt', 'w') as file:
-	file.write(output.encode('utf8'))
+if sys.version_info[0] == 3:
+	with open(playlistName + '.txt', 'wb') as file:
+		file.write(output.encode('utf8'))
+else:
+	with open(playlistName + '.txt', 'w') as file:
+		file.write(output.encode('utf8'))
