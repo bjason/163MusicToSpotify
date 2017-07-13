@@ -11,7 +11,7 @@ To convert, following the steps as follow:
 Note: the API 163 provided only enable me to retrive 1000 songs in your playlist. 
 
 ## 如何将spotify歌单导入网易云音乐？
-关于这一点，虽然网上已经有不少方法，但是大多还需要自己手动更改不少东西，总体来说十分麻烦。但原理一般都是利用网易提供的导入酷狗歌单（.KGL）文件进行导入，依葫芦画瓢，写了个很小的程序，具体的操作如下：
+关于这一点，虽然网上已经有不少方法，但是大多还需要自己手动更改不少东西，总体来说十分麻烦。之前在简书上找到的[方法](http://www.jianshu.com/p/21bafe882455)也已经失效了。但原理一般都是利用网易提供的导入酷狗歌单（.KGL）文件进行导入，依葫芦画瓢，写了个很小的程序，具体的操作如下：
 
 ###### 步骤
 
@@ -36,10 +36,10 @@ Note: the API 163 provided only enable me to retrive 1000 songs in your playlist
 1. 得到歌单ID：从浏览器进入到你的歌单，复制地址栏中"music.163.com/#/playlist?id="后面的数字。
 2. 进入到[这个页面](https://github.com/bjason/163MusicToSpotify)下载[t.py](https://github.com/bjason/163MusicToSpotify/blob/master/t.py)文件，请确保电脑上已经正确安装Python。随后，将文件中的*playlistId*变量改为你刚刚获得的歌单ID。
 3. 运行t.py得到一个.txt文件。
-4. 打开 [这个网站](http://spotlistr.herokuapp.com/#/search/textbox)并粘贴.txt中的全部内容，等待其自动识别并创建歌单。
+4. 打开[这个网站](http://spotlistr.herokuapp.com/#/search/textbox)并粘贴.txt中的全部内容，等待其自动识别并创建歌单。
 
 ###### 优点
-* 相比[这个方法](https://sspai.com/post/36542)简单、成功率高
+* 相比[小众软件的方法](https://sspai.com/post/36542)简单、成功率高
 
 ###### 可能遇到的问题
 
