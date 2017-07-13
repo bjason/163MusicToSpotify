@@ -1,7 +1,7 @@
 # 163MusicToSpotify
-This tiny program enable you to convert your favorite 163 music playlist to Spotify
+This tiny program enables you to convert your favorite 163 music playlist to Spotify
 To convert, following the steps as follow:
-1. go get the id of your 163 playlist, to get it open the page of the playlist in a browser then copy the numbers behind "music.163.com/#/playlist?id=" in address bar. 
+1. go get the id of your 163 playlist. to get it open the page of the playlist in a browser then copy the numbers behind "music.163.com/#/playlist?id=" in address bar. 
 2. download t.py to your computer and make sure there are python installed.
 3. right click the file and edit it. **paste the playlist id to playlistId vairable so that it can convert the playlist.**
 4. double click to run it.
