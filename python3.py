@@ -11,7 +11,7 @@ of it and look at the address bar.\
 errRetrive = 'No data retrived. \nPlease check the playlist id again.'
 
 while 1:
-	playlistId = 
+	playlistId = input(enterId)
 
 	#change the playlistId variable 
 	if playlistId == '?':
