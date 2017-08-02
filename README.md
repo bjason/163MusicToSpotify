@@ -1,14 +1,22 @@
-# 163MusicToSpotify
-This tiny program enables you to convert your favorite 163 music playlist to Spotify
-To convert, following the steps as follow:
-1. go get the id of your 163 playlist. to get it open the page of the playlist in a browser then copy the numbers behind "music.163.com/#/playlist?id=" in address bar. 
-2. download t.py to your computer and make sure there are python installed.
-3. right click the file and edit it. **paste the playlist id to playlistId vairable so that it can convert the playlist.**
-4. double click to run it.
-5. open the txt file right next to the t.py and select all then copy.
-6. open [this site](http://spotlistr.herokuapp.com/#/search/textbox) and paste the text. Following steps are all proceeded on that site. 
-
+# 163MusicSpider
+This tiny program enables you to download your favorite 163 music playlists.
+To achieve this goal, following the steps as follow:
+1. Go get the id of your 163 playlist. to get it open the page of the playlist in a browser then copy the numbers behind "music.163.com/#/playlist?id=" in address bar. 
+2. Download the python script to your computer and make sure there are python installed.
+3. Run the script by double clicking it. Be careful. You just need to run the script whose name is matched with your local Python version.
+4. Open the .txt file right next to the scirpt and select all then copy.
 Note: the API 163 provided only enable me to retrive 1000 songs in your playlist. 
+
+# 网易云音乐Spider
+程序旨在帮助你爬取到，网易云上你喜欢的歌单的所有的歌曲信息。
+步骤如下：
+1. 在浏览器打开你的网易云歌单，复制你的歌单网址中，位于 "music.163.com/#/playlist?id=" 后方的数字。
+2. 下载本脚本，并且确保本地机器已安装Python
+3. 双击脚本，运行脚本。你只需要运行和你的本地Python版本一样的脚本即可。
+4. 歌单保存到本地的.txt文件中。
+注意：网易云音乐歌单只允许加载1000首歌曲。
+
+# 其他教程
 
 ## 如何将spotify歌单导入网易云音乐？
 关于这一点，虽然网上已经有不少方法，但是大多还需要自己手动更改不少东西，总体来说十分麻烦。之前在简书上找到的[方法](http://www.jianshu.com/p/21bafe882455)也已经失效了。但原理一般都是利用网易提供的导入酷狗歌单（.KGL）文件进行导入，依葫芦画瓢，写了个很小的程序，具体的操作如下：
