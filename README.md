@@ -7,6 +7,8 @@ To achieve this goal, following the steps as follow:
 4. Open the .txt file right next to the scirpt and select all then copy.
 Note: the API 163 provided only enable me to retrive 1000 songs in your playlist. 
 
+
+
 # 网易云音乐Spider
 程序旨在帮助你爬取到，网易云上你喜欢的歌单的所有的歌曲信息。
 步骤如下：
@@ -15,6 +17,8 @@ Note: the API 163 provided only enable me to retrive 1000 songs in your playlist
 3. 双击脚本，运行脚本。你只需要运行和你的本地Python版本一样的脚本即可。
 4. 歌单保存到本地的.txt文件中。
 注意：网易云音乐歌单只允许加载1000首歌曲。
+
+
 
 # 其他教程
 
