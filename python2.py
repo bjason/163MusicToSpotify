@@ -38,4 +38,4 @@ while 1:
 	with open(playlistName + '.txt', 'w') as file:
 		file.write(output.encode('utf8'))
 
-	print('Success.\nCheck the directory of this file and find the .kgl file!')
+	print('Success.\nCheck the directory of this file and find the .txt file!')
