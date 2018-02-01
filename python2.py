@@ -19,7 +19,7 @@ while 1:
 		print(help)
 		continue
 	urladd = "http://music.163.com/api/playlist/detail?id="\
-		+ str(playlistId) + "&updateTime=-1"
+		+ str(playlistId)
 	# Your code where you can use urlopen
 	response = urlopen(urladd).read()
 	data = json.loads(response)
