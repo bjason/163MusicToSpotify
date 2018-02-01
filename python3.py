@@ -39,8 +39,8 @@ while 1:
 		output += trackName + ' - ' + artist + '\n'
 	playlistName = data["result"]["name"]
 
-	with open(playlistName+'.txt', 'w',encoding='utf-8') as file:
+	with open(playlistName + '.txt', 'w', encoding='utf-8') as file:
 		file.write(output)
 
-	print('=== Success ===\nCheck the directory of this file and find the .kgl file!')
+	print('=== Success ===\nCheck the directory of this file and find the .txt file!')
 	print
