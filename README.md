@@ -22,7 +22,7 @@ Note: the API 163 provided only enable me to retrive 1000 songs in your playlist
 
 # 其他教程
 
-## 如何将Spotify歌单导入网易云音乐？
+## ~~如何将Spotify歌单导入网易云音乐？(已失效)~~
 关于这一点，虽然网上已经有不少方法，但是大多还需要自己手动更改不少东西，总体来说十分麻烦。之前在简书上找到的[方法](http://www.jianshu.com/p/21bafe882455)也已经失效了。但原理一般都是利用网易提供的导入酷狗歌单（.KGL）文件进行导入，依葫芦画瓢，写了个很小的程序，具体的操作如下：
 
 ###### 步骤
