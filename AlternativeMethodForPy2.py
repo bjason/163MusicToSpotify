@@ -39,7 +39,7 @@ while 1:
 	
 	output = ""
 
-	if data["ResultCode"] != 1:
+	if data["ErrCode"] != "OK":
 		print(data["ErrCode"])
 		print(errRetrive)
 		print(help)
