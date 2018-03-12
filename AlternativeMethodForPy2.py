@@ -45,12 +45,14 @@ while 1:
 		print(help)
 		continue
 		
-	tracks = data["Body"]
+	body = data["Body"]
+	playlistName = body["name"]
+	tracks = body["songs"]
+	
 	for track in tracks:
 		trackName = track["title"]
 		artist = track["author"]
-		output += trackName + " - " + artist + "\n"
-	playlistName = playlistId 
+		output += trackName + " - " + artist + "\n" 
 	
 	with open(playlistName + ".txt", "w") as file:
 		file.write(output.encode("utf8"))
