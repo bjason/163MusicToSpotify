@@ -18,6 +18,7 @@ while 1:
 	#change the playlistId variable 
 	if playlistId == '?':
 		print(help)
+		continue
 	urladd = "http://music.163.com/api/playlist/detail?id="\
 		+ str(playlistId)
 	# Your code where you can use urlopen
