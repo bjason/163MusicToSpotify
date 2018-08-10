@@ -51,7 +51,7 @@ update：官方已经关闭了导入酷狗歌单的通道。
 ###### 步骤
 
 1. 得到歌单ID：从浏览器进入到你的歌单，复制地址栏中"music.163.com/#/playlist?id="后面的数字。
-2. 进入到[这个页面](https://github.com/bjason/163MusicToSpotify)下载相应的Python文件，请确保电脑上已经正确安装Python。如果电脑上安装了Python2，请下载[AlternativeMethodForPy2.py](https://github.com/bjason/163MusicToSpotify/blob/master/AlternativeMethodForPy2.py)。如果想尝试之前的方法，请下载Python2.py。如果您电脑上安装的是Python3，请下载Python3.py，或将AlternativeMethodForPy2.py稍加修改为Python3的语法（如果可以fork的话就更好了！）。
+2. 进入到[这个页面](https://github.com/bjason/163MusicToSpotify)下载相应的Python文件，请确保电脑上已经正确安装Python。如果电脑上安装了Python2，请下载[AlternativeMethodForPy2.py](https://github.com/bjason/163MusicToSpotify/blob/master/AlternativeMethodForPy2.py)，Python3则下载AlternativeMethodForPy3.py。如果想尝试之前的方法，请下载Python2.py或Python3.py。
 3. 运行文件并输入你刚刚获得的歌单ID，看到成功提示后在相同目录下可以看到一个以歌单ID命名的.txt文件。
 4. 打开[这个网站](http://spotlistr.herokuapp.com/#/search/textbox)并粘贴.txt中的全部内容，等待其自动识别并创建歌单。
 
