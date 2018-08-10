@@ -5,7 +5,7 @@ import httplib
 import urllib2
 
 # using API provided by dongyonghui(https://github.com/mrdong916)
-# instruction page: www.dongyonghui.com/default/20180128-网易云、酷狗、QQ音乐歌单接口API.html
+# instruction page: github.com/mrdong916/DAPI
 
 welcome = "===== Get tracks of your 163 playlist ====="
 enterId = "Enter the playlist id (Enter ? to get help):"
