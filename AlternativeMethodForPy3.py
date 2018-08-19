@@ -54,7 +54,7 @@ while 1:
 		artist = track["author"]
 		output += trackName + " - " + artist + "\n" 
 	
-	with open(playlistName + ".txt", "w") as file:
+	with open(playlistName + ".txt", "w", encoding="utf-8") as file:
 		file.write(output)
 
 	print("===== Success =====\nCheck the directory of this file and find the .txt file!")
