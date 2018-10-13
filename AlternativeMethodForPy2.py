@@ -32,7 +32,7 @@ while 1:
 	
 	req = urllib2.Request(reqUrl)
 	req.add_header('Content-Type', 'application/json')
-	req.add_header('Accept', 'text/plain')
+	req.add_header('Accept', 'application/json')
 	
 	response = urllib2.urlopen(req, encodedContent).read()
 	data = json.loads(response)
