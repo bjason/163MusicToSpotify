@@ -1,8 +1,6 @@
 import json
 import sys
 import urllib.request
-#import httplib
-#import urllib2
 
 # using API provided by dongyonghui(https://github.com/mrdong916)
 # instruction page: www.dongyonghui.com/default/20180128-网易云、酷狗、QQ音乐歌单接口API.html
@@ -32,7 +30,7 @@ while 1:
 	
 	req = urllib.request.Request(reqUrl)
 	req.add_header('Content-Type', 'application/json; charset=utf-8')
-	req.add_header('Accept', 'text/plain')
+	req.add_header('Accept', 'application/json')
 	
 	response = urllib.request.urlopen(req, encodedContent).read()
 	data = json.loads(response)
