@@ -32,7 +32,7 @@ while 1:
 	req.add_header('Content-Type', 'application/json; charset=utf-8')
 	req.add_header('Accept', 'application/json')
 	
-	response = urllib.request.urlopen(req, encodedContent).read()
+	response = urllib.request.urlopen(req, encodedContent).read().decode('utf-8')
 	data = json.loads(response)
 	
 	output = ""
