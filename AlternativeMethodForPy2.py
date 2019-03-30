@@ -1,6 +1,9 @@
 import json
 import urllib2
 
+# Note: Need to install and run ieaseMusic(https://github.com/trazyn/ieaseMusic).
+# Because of using http://localhost:10086/api/player/0/xxx to obtain the playlist.
+
 welcome = "===== Get tracks of your 163 playlist ====="
 enterId = "Enter the playlist id (Enter ? to get help):"
 help = "To get the id of the playlist, go to the page\
