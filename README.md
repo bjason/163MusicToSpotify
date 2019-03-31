@@ -24,6 +24,9 @@ update：官方已经关闭了导入酷狗歌单的通道。
 ## 如何将网易云音乐歌单导入Spotify？
 网上似乎没有太多关于这个需求的解决方法啊，我找到的[唯一一个](https://sspai.com/post/36542)是利用网易提供的 API 得到歌单列表的JSON文件，再使用 workflow + IFTTT 曲线救国的方法，不仅不直观，而且要在手机上多次下载软件、多次授权之后才能进行操作，我跟着原文的方式尝试了一遍之后，依然没有在spotify中看到导入的歌单……所以被逼无奈才又写了几行代码实现的。(可能是滞后的原因，第二天早上看到了添加的歌单)
 
+###### 一种新方法
+由于网易云提供的API不定期犯抽，于是利用dongyonghui写的API完成了新的方法，点击[这里](www.dongyonghui.com/default/20180128-网易云、酷狗、QQ音乐歌单接口API.html)查看该API的说明。
+
 ###### 另一种获取歌单id和获取歌单列表的方法
 1. 下载并安装[ieaseMusic](https://github.com/trazyn/ieaseMusic)
 2. 打开运行ieaseMusic，确保是运行状态
