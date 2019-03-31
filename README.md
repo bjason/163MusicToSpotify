@@ -31,7 +31,6 @@ update：官方已经关闭了导入酷狗歌单的通道。
 4. 菜单栏 -> View - doggle developer tools，进入开发者工具
 5. 进入 xxx喜欢的音乐，在 开发者工具 - NetWork 中能看到名称是数字的请求，这个数字就是歌单id；请求地址就是[AlternativeMethodForPy2.py](https://github.com/nlpsuge/163MusicToSpotify/blob/master/AlternativeMethodForPy2ViaIeaseMusic.py)所请求的地址
 6. 把上步中看到的数字粘贴到运行脚本的提示处
-7. 其他和原作者写的完全一样
 
 ###### 获取完整歌单列表的方法(突破网易云音乐API只返回1000个音乐的限制，本人已在安卓测试)
 1. 在手机上下载所有歌曲
