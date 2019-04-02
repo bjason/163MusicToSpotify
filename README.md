@@ -27,6 +27,24 @@ update：官方已经关闭了导入酷狗歌单的通道。
 ###### 一种新方法
 由于网易云提供的API不定期犯抽，于是利用dongyonghui写的API完成了新的方法，点击[这里](www.dongyonghui.com/default/20180128-网易云、酷狗、QQ音乐歌单接口API.html)查看该API的说明。
 
+###### 另一种获取歌单id和获取歌单列表的方法
+1. 下载并安装[ieaseMusic](https://github.com/trazyn/ieaseMusic)
+2. 打开运行ieaseMusic，确保是运行状态
+3. 登录ieaseMusic
+4. 菜单栏 -> View - doggle developer tools，进入开发者工具
+5. 进入 xxx喜欢的音乐，在 开发者工具 - NetWork 中能看到名称是数字的请求，这个数字就是歌单id；请求地址就是[AlternativeMethodForPy2.py](https://github.com/nlpsuge/163MusicToSpotify/blob/master/AlternativeMethodForPy2ViaIeaseMusic.py)所请求的地址
+6. 把上步中看到的数字粘贴到运行脚本的提示处
+
+###### 获取完整歌单列表的方法(突破网易云音乐API只返回1000个音乐的限制，本人已在安卓测试)
+1. 在手机上下载所有歌曲
+2. 把手机连接到Linux
+3. 进入手机内部存储这个目录: netease/cloudmusic/Music
+4. 通过观察歌曲名字，刚好是 '艺人 - 歌曲名' 的形式(一旦不是可以考虑通过Python + eyed3读取音乐文件中的艺人等信息)
+5. 用命令将歌曲列表名字写到文件中: 
+   ls > /tmp/playlist.txt
+6. 去掉歌曲名中的后缀: 
+   awk -F ".mp3" '{print $1}' /tmp/playlist.txt
+   
 ###### 步骤
 
 1. 得到歌单ID：从浏览器进入到你的歌单，复制地址栏中"music.163.com/#/playlist?id="后面的数字。
