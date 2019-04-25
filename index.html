@@ -12,7 +12,6 @@
   <link rel="stylesheet" href="css/animsition.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -35,14 +34,14 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-12" data-aos="fade-up">
-            <a class="project animsition-link" href="https://music.163.com" target="_blank">
+            <a class="project">
               <figure>
                 <img src="images/1.png" alt="First step" class="img-fluid">
               </figure>
               <div class="project-hover">
                 <div class="project-hover-inner">
                   <h2>输入歌单地址</h2>
-                  <span>第一步，在下方输入歌单地址。目前支持：网易云音乐</span>
+                  <span>第一步，在下方输入歌单地址。<br />目前支持：网易云音乐、QQ音乐</span>
                 </div>
               </div>
             </a>
@@ -58,7 +57,11 @@
         <div class="row pagination-centered">
           <div class="col-md-4  mb-4">
             <button onclick="searchPlaylist()" id="searchBtn"
-              class="button button--red btn btn-primary btn-lg">搜索歌单信息</button>
+              class="button button--red btn-primary btn-lg">搜索歌单信息</button>
+          </div>
+
+          <div class="col-md-6 text-md-right text-center align-middle">
+            <p id="errInfo" class="text-primary"></p>
           </div>
         </div>
       </div>
@@ -90,7 +93,7 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-md-4" data-aos="fade-up">
-            <h2 class="section-heading mt-3">歌单名</h2>
+            <h2 class="section-heading mt-3" id="plname">歌单名</h2>
           </div>
           <div class="col-md-8" data-aos="fade-up" data-aos-delay="100">
 
@@ -107,8 +110,7 @@
             </div>
             <div class="row">
               <div class="col-md-4  mb-4">
-                <button onclick="clickToCopy()" class="button button--red btn btn-primary btn-lg"
-                  id="copyBtn">点我复制</button>
+                <button onclick="clickToCopy()" class="button button--red btn-primary btn-lg" id="copyBtn">点我复制</button>
               </div>
             </div>
             <!-- END row -->
@@ -122,16 +124,19 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-12" data-aos="fade-up">
-            <a class="project animsition-link" href="https://www.tunemymusic.com/zh-cn/" target="_blank">
+            <a class="project">
               <figure>
                 <img src="images/3.png" alt="Third step" class="img-fluid">
               </figure>
               <div class="project-hover">
                 <div class="project-hover-inner">
                   <h2>在TuneMyMusic导入歌单</h2>
-                  <span>1. 选择来源“从文本”<br />
+                  <span>
+                    从下方的链接进入TuneMyMusic后：<br />
+                    1. 选择来源“从文本”<br />
                     2. 粘贴<br />
-                    3. 选择目的地的流媒体服务</span>
+                    3. 选择目的地的流媒体服务
+                  </span>
                 </div>
               </div>
             </a>
@@ -145,7 +150,7 @@
       data-aos="fade-up" style="margin-top:0;">
       <div class="container-fluid">
         <div class="cta-inner">
-          <h2><span class="words-1">最后一步</span> <span class="words-2">点击打开TuneMyMusic</span>
+          <h2><span class="words-1">完成最后一步</span> <span class="words-2">点击打开TuneMyMusic</span>
           </h2>
         </div>
       </div>
@@ -160,15 +165,14 @@
               Copyright &copy;<script>
                 document.write(new Date().getFullYear());
               </script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i>
-              by <a href="https://colorlib.com" target="_blank" class="text-primary">Colorlib</a>
+              by <a href="https://colorlib.com" target="_blank" class="text-primary">Colorlib</a><br/>
+              <a href="https://github.com/bjason/163MusicToSpotify" target="_blank" class="text-primary">Source Code</a>
               <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
             </p>
           </div>
           <div class="col-md-6 text-md-right text-center footer-social">
-            <a href="#" class="p-3"><span class="icon-facebook2"></span></a>
-            <a href="#" class="p-3"><span class="icon-twitter2"></span></a>
-            <a href="#" class="p-3"><span class="icon-dribbble2"></span></a>
-            <a href="#" class="p-3"><span class="icon-instagram"></span></a>
+            <a href="https://github.com/bjason" target="_blank" class="p-3"><i class="fa fa-github"></i></a>
+            <a href="https://www.instagram.com/bjsn_photos/" target="_blank" class="p-3"><i class="fa fa-instagram"></i></a>
           </div>
         </div>
       </div>
