@@ -72,10 +72,6 @@ jQuery(document).ready(function ($) {
 
 function searchPlaylist() {
 	var url = $('#playlistUrl').val();
-	var searchButton = $('#searchBtn');
-	var loadingText = '<i class="fa fa-circle-o-notch fa-spin"></i> 获取中...';
-
-	changeButtonText(searchButton, loadingText);
 
 	if (url.includes("music.163.com/#/playlist?id=")) {
 		let index = url.indexOf("=");
@@ -108,6 +104,10 @@ function getPlaylistInfo(playlistId, TransCode) {
 			"SongListId": playlistId
 		}
 	};
+	var searchButton = $('#searchBtn');
+	var loadingText = '<i class="fa fa-circle-o-notch fa-spin"></i> 获取中...';
+
+	changeButtonText(searchButton, loadingText);
 
 	$.ajax(reqUrl, {
 		data: JSON.stringify(postContent),
@@ -162,8 +162,14 @@ function getPlaylistInfo(playlistId, TransCode) {
 					res.push(title + '-' + artist);
 				});
 				res = res.join('\n');
-				$('#playlistName').text(playlist_name)
-				$('#playlistContent').val(res)
+				$('#playlistName').text(playlist_name);
+				$('#playlistContent').val(res);
+
+				$('html, body').animate({
+					scrollTop: $($("#next2")).offset().top - 40
+				}, 500);
+
+				return false;
 			}
 		},
 		error: function (request) {
